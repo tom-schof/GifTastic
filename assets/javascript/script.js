@@ -5,25 +5,16 @@ function addButtons() {
 
     $("#buttons-div").empty();
 
-    // Looping through the array of topics
     for (var i = 0; i < topics.length; i++) {
 
-        // Then dynamicaly generating buttons for each movie in the array
-        // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
         var a = $("<button>");
-
-        // Adding a class of movie-btn to our button
         a.addClass("btn btn-primary btn-lg");
-        // Adding a data-attribute
         a.attr("type", "button")
         a.attr("data-animal", topics[i]);
-        // Providing the initial button text
         a.text(topics[i]);
-        // Adding the button to the buttons-view div
         $("#buttons-div").append(a);
     }
 }
-
 
 function displayGifs() {
     console.log("ran displayGifs()");
