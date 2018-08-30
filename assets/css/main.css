@@ -1,0 +1,13 @@
+body{
+    background-color: whitesmoke;
+}
+.btn{
+    margin: 5px;
+    background-color: cadetblue;
+}
+
+.gif-div{
+    
+    float: left;
+    margin: 10px;
+}
